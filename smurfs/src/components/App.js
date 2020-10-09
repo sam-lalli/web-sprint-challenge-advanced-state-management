@@ -4,6 +4,8 @@ import { connect } from "react-redux"
 
 import "./App.css";
 import SmurfList from "./SmurfList";
+import SmurfForm from "./SmurfForm";
+
 
 
 class App extends Component {
@@ -17,6 +19,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Welcome to the Smurf Village!</h1>
+        <SmurfForm />
         <SmurfList />
       </div>
     );

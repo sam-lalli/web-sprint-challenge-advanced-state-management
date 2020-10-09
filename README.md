@@ -24,10 +24,23 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What problem does the context API help solve?
-2. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+  - makes state more modular so if other components don't need that part of state you don't need to pass it, also helps in the component tree if one component at the end of the tree needs the state but others above don't
+
+2. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each 
+piece do? Why is the store known as a 'single source of truth' in a redux application?
+  - actions: takes action being done on app and assigns it a type and payload
+
+  - reducer: takes the type and payload from action, matches the type to the corresponding case and assigns payload to whatever part of state you need
+  - store: holds all your state globally and can be accessed by any part of the app
+
 3. What is the difference between Application state and Component state? When would be a good time to use one over the other?
+  - application state is avalible to all parts of the application, component state is only avalible in that component, can be passed down to child components
+
 4. Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+  - redux thunk is middleware that intercepts that action before it gets to the reducer and can change it.
+
 5. What is your favorite state management system you've learned and this sprint? Please explain why!
+  - Redux is probably my favorite state management system because I like the flexablility of only passing what you need to each component that needs it, less prop drilling which makes the flow of data much clearer to me. It has its drawbacks with it being global state management especially when apps go to production and become very large. With what we are dealing with I believe it is the most effective state management system.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
