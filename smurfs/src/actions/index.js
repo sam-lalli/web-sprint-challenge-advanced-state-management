@@ -35,6 +35,5 @@ export const addSmurfs = (newSmurf) => (dispatch) => {
     .catch(err => {
         console.log("didnt work", err)
         dispatch({type: ADD_SMURF_FAILURE, payload: err})
-})
-
+    })
 }

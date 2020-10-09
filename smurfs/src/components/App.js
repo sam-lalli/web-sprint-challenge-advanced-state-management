@@ -14,7 +14,6 @@ class App extends Component {
     this.props.fetchSmurfs()
   }
 
-
   render() {
     return (
       <div className="App">

@@ -16,4 +16,3 @@ ReactDOM.render(
         <App />
     </Provider>,
     rootElement );
-
